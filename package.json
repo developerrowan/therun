@@ -1,6 +1,6 @@
 {
   "name": "therun",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "Node wrapper for therun.gg's API.",
   "author": "Devin Rowan",
   "license": "MIT",
