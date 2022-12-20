@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "useDefineForClassFields": true,
+    "module": "es2015",
+    "lib": ["es2015", "DOM"],
+    //"declaration": true,
+    //"declarationMap": true,
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "noEmit": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "noImplicitAny": true
+  },
+  "exclude": ["node_modules", "dist", "**/*.spec.ts"],
+  "include": ["src/**/*.ts"]
+}
