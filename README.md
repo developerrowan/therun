@@ -1,13 +1,14 @@
 # therungg
 Node wrapper [for therun.gg's](https://therun.gg) API
 
-![npm version](https://img.shields.io/npm/v/therungg)
+[<img src="https://img.shields.io/npm/v/therungg">](https://www.npmjs.com/package/therungg)
 
 **TheRun is a service which is still early in development, so breaking changes should be expected. ReadTheDocs coming soon.**
 
 ## Basic Installation and Usage
 Install this package by running `npm install therungg`.
 
+### HTTP API
 Get front page data:
 ```ts
 import { getFrontPageData } from 'therungg';
@@ -22,6 +23,25 @@ import { getAllGames } from 'therungg';
 
 const games = await getAllGames();
 console.log(games);
+```
+### Live WebSocket API
+You can listen to all the events sent from the Live API via:
+```ts
+import { LiveWebSocket } from 'therungg';
+
+const ws = new LiveWebSocket(); // Will listen to ALL Live events
+
+ws.onOpen = () => {
+  console.log("Opened connection");
+}
+
+ws.onMessage = (data) => {
+  console.log(data.user);
+}
+```
+To listen to events only for a specific user, pass a username to the `LiveWebSocket` constructor.
+```ts
+const ws = new LiveWebSocket("cheese051"); // Will listen to ALL Live events
 ```
 
 ## Notes
@@ -38,6 +58,6 @@ using the latest LTS version of Node (v18 at time of writing) which supports `fe
 
 ## Roadmap
 
-  - [ ] Live API WebSocket support
+  - [x] Live API WebSocket support
   - [ ] Marathon API support
   - [ ] Better test coverage
