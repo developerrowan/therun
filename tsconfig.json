@@ -8,7 +8,6 @@
     //"declarationMap": true,
     "outDir": "./dist",
     "esModuleInterop": true,
-    "noEmit": true,
     "moduleResolution": "node",
     "strict": true,
     "noImplicitAny": true
