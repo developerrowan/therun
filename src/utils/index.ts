@@ -1,5 +1,4 @@
 export { httpFetch } from './httpFetch';
-export { remap } from './remap';
 export type {
 	AdvancedSplitInfo,
 	AlternativeSplitInfo,
@@ -15,6 +14,7 @@ export type {
 	LiveRun,
 	LiveRunEvent,
 	LiveSplit,
+	LiveWebSocketResponse,
 	Leaderboard,
 	LeaderboardDetails,
 	LeaderboardRecentRun,
@@ -28,4 +28,5 @@ export type {
 	SplitHistory,
 	UserProfile,
 	UserProfileRun,
+	WebSocketEvent,
 } from './types';
