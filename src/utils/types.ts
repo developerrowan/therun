@@ -139,7 +139,6 @@ export type GameDetails = {
 	image: string;
 	display: string;
 	game: string;
-	categoryToUsername: string;
 };
 
 export type GameStats = {
@@ -198,6 +197,15 @@ export type FrontPageData = {
 	runs: FrontPageRun[];
 	gamestats: GameResult[];
 };
+
+// TODO: more enums babyyyyy
+export type LiveWebSocketResponse = {
+	user: string;
+	run: LiveRun;
+	type: string;
+};
+
+export type WebSocketEvent<T> = (data?: T) => void;
 
 export type LiveRun = {
 	game: string;
