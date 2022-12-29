@@ -13,6 +13,7 @@ export const httpFetch = async <T>(
 		if (e instanceof Error) {
 			if (e.message === '404') throw new Error('Not Found');
 			if (e.message === '429') throw new Error('Rate Limited');
+			if (e.message === '500') throw new Error('Bad Request');
 
 			throw e;
 		}
