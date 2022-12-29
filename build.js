@@ -1,9 +1,8 @@
-const { build } = require("esbuild");
+const { build } = require('esbuild');
 const { nodeExternalsPlugin } = require('esbuild-node-externals');
 const { Generator } = require('npm-dts');
 
 new Generator({
-    entry: 'src/index.ts',
     output: 'dist/index.d.ts',
 }).generate();
 
@@ -11,6 +10,7 @@ const config = {
     entryPoints: ['src/index.ts'],
     bundle: true,
     minify: true,
+    sourcemap: 'inline',
     plugins: [nodeExternalsPlugin()],
 };
 
