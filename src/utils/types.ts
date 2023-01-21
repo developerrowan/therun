@@ -5,7 +5,7 @@ export type UserProfile = {
 };
 
 export type UserProfileRun = {
-	gameTimeData: Nullable<string>;
+	gameTimeData: Nullable<GameTimeData>;
 	personalBestTime: Nullable<string>;
 	attemptCount: number;
 	displayRun: string;
@@ -32,7 +32,7 @@ export type UserProfileRun = {
 };
 
 export type FrontPageRun = {
-	gameTimeData: Nullable<string>;
+	gameTimeData: Nullable<GameTimeData>;
 	personalBestTime: Nullable<string>;
 	status: string;
 	displayRun: string;
@@ -44,6 +44,16 @@ export type FrontPageRun = {
 	originalRun: string;
 	game: string;
 	url: string;
+};
+
+export type GameTimeData = {
+	sessions: Session[];
+	personalBest: string;
+	personalBestTime: Nullable<string>;
+	history: string;
+	stdDev: number;
+	timeToSave: number;
+	sumOfBests: Nullable<string>;
 };
 
 export type Session = {

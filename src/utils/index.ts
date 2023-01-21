@@ -9,6 +9,7 @@ export type {
 	GameDetails,
 	GameResult,
 	GameStats,
+	GameTimeData,
 	HistoryMeta,
 	KeyValuePair,
 	LiveRun,

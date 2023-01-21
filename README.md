@@ -41,20 +41,23 @@ ws.onMessage = (data) => {
 ```
 To listen to events only for a specific user, pass a username to the `LiveWebSocket` constructor.
 ```ts
-const ws = new LiveWebSocket("cheese051"); // Will listen to ALL Live events
+const ws = new LiveWebSocket("cheese051"); // Will listen to live events for only this user
 ```
 
 ## Notes
 ### Error handling
 The HTTP functionality of this API expects that you will try-catch any calls you make. This means that errors are thrown in an ungraceful manner.
 
-There are two scenarios in which this occurs:
+There are three scenarios in which this occurs:
 
   * HTTP 404 error (Not Found)
   * HTTP 429 error (Rate Limited)
+  * HTTP 500 error (Bad Request)
 ### Compatibility
 This package uses `fetch`, which has been built into Node without the need for polyfills since version 17.5. By now if you are starting a new project, you should be
 using the latest LTS version of Node (v18 at time of writing) which supports `fetch`.
+
+For WebSocket functionality, this package makes use of [`isomorphic-ws`](https://github.com/heineiuo/isomorphic-ws) to ensure compatibility in both browser and Node environments.
 
 ## Roadmap
 
