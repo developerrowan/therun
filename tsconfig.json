@@ -1,11 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es2015",
     "useDefineForClassFields": true,
-    "module": "es2015",
-    "lib": ["es2015", "DOM"],
-    //"declaration": true,
-    //"declarationMap": true,
+    "module": "commonjs",
+    "lib": ["esnext", "DOM"],
     "outDir": "./dist",
     "esModuleInterop": true,
     "moduleResolution": "node",
