@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/developerrowan/therun/compare/v1.1.3...v1.2.0) (2023-01-28)
+
+
+### Features
+
+* **build:** Improve build system ([90db402](https://github.com/developerrowan/therun/commit/90db4025f0a5e004c34f7c343a704b55b5653c24))
+
 ## [1.1.0](https://github.com/developerrowan/therun/compare/v1.0.0...v1.1.0) (2022-12-29)
 
 
