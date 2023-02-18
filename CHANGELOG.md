@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/developerrowan/therun/compare/v1.2.1...v1.2.2) (2023-02-18)
+
+
+### Bug Fixes
+
+* **history:** Fix history name in type ([1bd1307](https://github.com/developerrowan/therun/commit/1bd1307633b4c8860b0f7bb9f5f5710aaab70b1f))
+
 ## [1.2.1](https://github.com/developerrowan/therun/compare/v1.2.0...v1.2.1) (2023-02-18)
 
 
