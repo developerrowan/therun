@@ -10,8 +10,7 @@ import { RunHistory, httpFetch } from '../../utils';
 export const getHistory = async (
 	historyFileName: string
 ): Promise<RunHistory> => {
-	const endpoint = `/${historyFileName}`;
-	const response = await httpFetch(endpoint, THERUN_FILEHISTORY_URL);
+	const response = await httpFetch(historyFileName, THERUN_FILEHISTORY_URL);
 
 	return response as RunHistory;
 };
