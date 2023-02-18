@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/developerrowan/therun/compare/v1.2.0...v1.2.1) (2023-02-18)
+
+
+### Bug Fixes
+
+* **history:** Fix history throwing 403 error ([ca387f1](https://github.com/developerrowan/therun/commit/ca387f130c0f42a66d8eb9d1091ef5bbe296257c))
+
 ## [1.2.0](https://github.com/developerrowan/therun/compare/v1.1.3...v1.2.0) (2023-01-28)
 
 
