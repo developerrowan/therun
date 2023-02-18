@@ -20,7 +20,7 @@ export type UserProfileRun = {
 	pbId: number;
 	totalRunTime: string;
 	lastSplitId: number;
-	historyFileName: string;
+	historyFilename: string;
 	sessions: Session[];
 	gameregion: string;
 	sumOfBests: Nullable<string>;
